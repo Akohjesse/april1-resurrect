@@ -57,6 +57,12 @@ class Scene{
 
         this.modelGroup = new THREE.Group()
 
+        // initially i was looping with items and not allMesh, in Line 77
+        let items = [
+            "heRjaHxXLjFJjdt", "QyAWeOpsuVjSyNX", "uBiRabfzjnxHTgu", "PCWEALGjovbBhHe", "BhsXYXYiQBCrRTz",
+            "LXhIduNQXQASNBG", "AFbNJKMTxxnUVsS", "ioTXiDtRDpMHGMJ"
+        ]
+
         let allMesh =[]
         model.traverse((child) => {
             if (child.isMesh) {
